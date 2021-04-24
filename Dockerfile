@@ -11,7 +11,7 @@
 #COPY ${JAR_FILE} app.jar
 #ENTRYPOINT ["java","-jar","/app.jar"]
 
-FROM openjdk:11-jdk-alpine
+FROM openjdk:8-jdk-alpine
 RUN addgroup -S spring && adduser -S spring -G spring
 RUN pwd
 RUN ls
