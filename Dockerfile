@@ -15,7 +15,7 @@ FROM adoptopenjdk/openjdk11:alpine-jre  as build
 RUN addgroup -S spring && adduser -S spring -G spring
 RUN pwd
 RUN ls
-WORKDIR home/spring
+WORKDIR /user/src/app
 RUN ls
 USER spring:spring
 ENV JAR_FILE=ArchDevOps-0.0.1-SNAPSHOT.jar
