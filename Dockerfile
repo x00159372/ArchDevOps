@@ -19,5 +19,5 @@ WORKDIR /user/src/app
 RUN ls
 USER spring:spring
 ENV JAR_FILE=ArchDevOps-0.0.1-SNAPSHOT.jar
-COPY ${JAR_FILE} app.jar
+#COPY ${JAR_FILE} app.jar
 ENTRYPOINT ["java","-jar","/app.jar"]
