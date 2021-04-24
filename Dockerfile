@@ -8,6 +8,7 @@ WORKDIR /opt/app
 
 # cp target/spring-boot-web.jar /opt/app/app.jar
 RUN pwd
+RUN ls
 
 COPY ${JAR_FILE} app.jar
 
