@@ -15,6 +15,7 @@ FROM openjdk:8-jdk-alpine
 RUN addgroup -S spring && adduser -S spring -G spring
 RUN pwd
 RUN ls
+RUN cd opt
 RUN cd target
 USER spring:spring
 ENV JAR_FILE=ArchDevOps-0.0.1-SNAPSHOT.jar
