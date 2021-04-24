@@ -82,7 +82,7 @@ jobs:
       id: build-image
       env:
         ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
-        ECR_REPOSITORY: 863432565647.dkr.ecr.eu-west-1.amazonaws.com/architecture_as_code_for_microservices
+        ECR_REPOSITORY: architecture_as_code_for_microservices
         IMAGE_TAG: ${{ github.sha }}
       run: |
         # Build a docker container and
