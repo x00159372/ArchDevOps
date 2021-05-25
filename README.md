@@ -51,12 +51,12 @@ AWS_SECRET_ACCESS_KEY
 
 ## Add GitHub Actions workflow on push to deploy
 Go to the Actions tab of your repository to find the starter workflow.
- 
+  ![image](https://user-images.githubusercontent.com/79165043/119424080-aa4ebf00-bcfc-11eb-9c82-6e8477898523.png)
+
 
 
 ## Add the actions pipeline file:
 https://github.com/x00159372/ArchDevOps/blob/master/.github/workflows/aws.yml
 
-![image](https://user-images.githubusercontent.com/79165043/119423823-21d01e80-bcfc-11eb-8a88-cb0b817d21c6.png)
 
  
