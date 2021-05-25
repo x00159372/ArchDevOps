@@ -28,7 +28,7 @@ aws iam create-user --user-name archDevops _user
 
 configer Programmatic access for the user archDevops _user
 
-##add the user to the group
+## add the user to the group
 
 aws iam add-user-to-group --user-name archDevops _user --group-name archDevops _group
 
@@ -42,19 +42,19 @@ aws ecs create-service --region eu-west-1 --service-name archDevops-service --ta
  --desired-count 1 --launch-type "FARGATE" --network-configuration "awsvpcConfiguration={subnets=[subnet-fcc5779b,subnet-f7a318be],securityGroups=[sg-043ab03ec99b60369],assignPublicIp=ENABLED}" --cluster fargate
 
 
-##Configure secrets
+## Configure secrets
 In Secrets in the Settings section of your Github repository, configure the two secrets below with the credentials for an IAM user (which you can obtain from the AWS console):
 AWS_ACCESS_KEY_ID
 AWS_SECRET_ACCESS_KEY
 
 
 
-##Add GitHub Actions workflow on push to deploy
+## Add GitHub Actions workflow on push to deploy
 Go to the Actions tab of your repository to find the starter workflow.
  
 
 
-##Add the actions pipeline file:
+## Add the actions pipeline file:
 https://github.com/x00159372/ArchDevOps/blob/master/.github/workflows/aws.yml
 
 ![image](https://user-images.githubusercontent.com/79165043/119423823-21d01e80-bcfc-11eb-8a88-cb0b817d21c6.png)
