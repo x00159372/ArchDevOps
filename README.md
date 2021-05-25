@@ -7,7 +7,8 @@ AWS Fargate is a serverless compute engine for containers that works with both A
 ## Github Actions
 GitHub and Amazon Web Services have collaborated to develop this initial set of four open source GitHub Actions and a starter workflow
 
-## Project instolation 
+## Project installation
+ 
 
 ### Aws cloud shell
 
@@ -63,5 +64,6 @@ Go to the Actions tab of your repository to find the starter workflow.
 https://github.com/x00159372/ArchDevOps/blob/master/.github/workflows/aws.yml
 
 
- ## Refrance 
+ ## Reference
+ 
  https://aws.amazon.com/blogs/opensource/github-actions-aws-fargate/
