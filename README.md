@@ -14,23 +14,21 @@ aws ecs register-task-definition --region eu-west-1 --cli-input-json file://http
 
 
 
-##Create an ECS cluster
+## Create an ECS cluster
 
 aws ecs create-cluster --region eu-west-1 --cluster-name archDevops_cluster
 
-##Create a security group
+# security IAM role
 
-##IAM role
-
-##create the group.
+## create the group.
 aws iam create-group --group-name archDevops_group
 
-##create the user.
+## create the user.
 aws iam create-user --user-name archDevops _user
 
 configer Programmatic access for the user archDevops _user
 
-add the user to the group
+##add the user to the group
 
 aws iam add-user-to-group --user-name archDevops _user --group-name archDevops _group
 
@@ -38,7 +36,7 @@ arn:aws:iam::863432565647:group/codeStoreGroup
 
 aws ec2 authorize-security-group-ingress --group-id 863432565647--protocol tcp --port 7000 --cidr 0.0.0.0/0
 
-##Create the Fargate service
+## Create the Fargate service
 
 aws ecs create-service --region eu-west-1 --service-name archDevops-service --task-definition first-run-task-definition
  --desired-count 1 --launch-type "FARGATE" --network-configuration "awsvpcConfiguration={subnets=[subnet-fcc5779b,subnet-f7a318be],securityGroups=[sg-043ab03ec99b60369],assignPublicIp=ENABLED}" --cluster fargate
